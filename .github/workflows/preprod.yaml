@@ -16,9 +16,9 @@ jobs:
         # add Node for Vuejs
         uses: actions/setup-node@master
 
-      - name: Install npm
+      - name: Install dependances
         # allow to run npm
-        run: sudo npm install
+        run: sudo npm ci
 
       - name: Run Lint
         # fix problems in JavaScript code
