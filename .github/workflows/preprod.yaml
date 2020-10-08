@@ -2,7 +2,7 @@ name: Preprod commit Heroku
 on:
   push:
     branches:
-      - premaster
+      - preprod
 jobs:
   # This workflow contains "deply"
   deploy:
