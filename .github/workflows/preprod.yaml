@@ -4,7 +4,7 @@ on:
     branches:
       - preprod
 jobs:
-  # This workflow contains "deply"
+  # This workflow contains "deploy"
   deploy:
     runs-on: ubuntu-latest
     steps:
@@ -18,7 +18,7 @@ jobs:
 
       - name: Install npm
         # allow to run npm
-        run: sudo npm ci
+        run: sudo npm install
 
       - name: Run Lint
         # fix problems in JavaScript code
