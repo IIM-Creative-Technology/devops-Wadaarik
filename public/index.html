@@ -1,13 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nicolas Boudier, Chef de projet Digital et Développeur Web" />
+    <meta name="keywords" content="portfolio, purple pill, webmasters, développeur, développeur web, chef de projet, digital, chef de projet digital, nicolas, nicolas boudier, boudier" />
+    <meta name="Generator" content="PhpStorm" />
+    <meta name="copyright" content="© purplepill.ovh 2020" />
+    <meta name="publisher" content="Purple Pill" />
+    <link rel="canonical" href="https://www.purple-pill.fr/Accueil | Purple pill" />
+    <script src="../js/glider.js"></script>
+    <script src="../js/slider.js"></script>
+    <title>Purple Pill</title>
+    <link rel="icon" href="<%= BASE_URL %>favicon-purplepill.png">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+
+      *{
+      margin: 0;
+      padding: 0;
+    }
+    html{
+      overflow-x: hidden;
+    }
+    body{
+      background-color: #0f0618;
+    }
+    ol, ul, li, a{
+      font-family: "Roboto";
+      margin: 0;
+      padding: 0;
+      text-indent: unset;
+    }
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    h6{
+      color: white;
+    }
+    h2{
+      font-family: ArialBlack;
+      font-size: 45px;
+      font-weight: 900;
+      color: white;
+      text-shadow: 4px 4px #9E16BA;
+    }
+    @media (min-width: 767px){
+      #mobilemenu{
+        display: none !important;
+      }
+      #mobile-nav{
+        display: none !important;
+      }
+    }
+
+    @media (max-width: 767px){
+      #desktop-nav{
+        display: none !important;
+      }
+    }
+    .glider-contain {
+      width: 95%;
+      margin: 45px auto;
+      position: relative;
+    }
+    .glider {
+      margin: 0 auto;
+      position: relative;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: none;
+      transform: translateZ(0);
+    }
+    .glider-track {
+      transform: translateZ(0);
+      width: 100% !important;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      z-index: 1;
+    }
+    .glider.draggable {
+      user-select: none;
+      cursor: -webkit-grab;
+      cursor: grab;
+    }
+    .glider.draggable .glider-slide img {
+      user-select: none;
+      pointer-events: none;
+    }
+    .glider.drag {
+      cursor: -webkit-grabbing;
+      cursor: grabbing;
+    }
+    .glider-slide {
+      user-select: none;
+      justify-content: center;
+      align-content: center;
+      width: 100%;
+    }
+    .glider-slide img {
+      max-width: 100%;
+    }
+    .glider::-webkit-scrollbar {
+      opacity: 0;
+      height: 0;
+    }
+    .glider-prev,.glider-next {
+      user-select: none;
+      position: absolute;
+      outline: none;
+      background: none;
+      padding: 0;
+      z-index: 2;
+      font-size: 70px;
+      text-decoration: none;
+      left: 5px;
+      border: 0;
+      top: 30%;
+      cursor: pointer;
+      color: #9E16BA;
+      opacity: 1;
+      line-height: 1;
+      transition: opacity .5s cubic-bezier(.17,.67,.83,.67),
+      color .5s cubic-bezier(.17,.67,.83,.67);
+    }
+    .glider-prev:hover,
+    .glider-next:hover,
+    .glider-prev:focus,
+    .glider-next:focus {
+      color: #a89cc8;
+    }
+    .glider-next {
+      right: 5px;
+      left: auto;
+    }
+    .glider-next.disabled,
+    .glider-prev.disabled {
+      opacity: .25;
+      color: #9E16BA;
+      cursor: default;
+    }
+    .glider-slide {
+      min-width: 150px;
+      max-width: 245px;
+      margin: 0 20px 0 20px;
+    }
+    .glider-hide {
+      opacity: 0;
+    }
+
+    @media(max-width: 36em){
+      .glider::-webkit-scrollbar {
+        opacity: 1;
+        -webkit-appearance: none;
+        width: 7px;
+        height: 3px;
+      }
+      .glider::-webkit-scrollbar-thumb {
+        opacity: 1;
+        border-radius: 99px;
+        background-color: rgba(156, 156, 156, 0.25);
+        box-shadow: 0 0 1px rgba(255,255,255,.25);
+      }
+    }
+
+    </style>
   </head>
   <body>
+
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
