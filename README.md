@@ -12,6 +12,12 @@ Le projet est commit sur 2 branches :
   - master-prod.yml est le fichier permettant de push ses commits vers la branche de prod.
   - static.json : permet de spécifier une racine active différente pour le répertoire de l'application
   
+1- On créer le projet.
+2- On créer le fichier qui va gérer les actions lors d'un push sur la branch choisie (.github/workflows/[monfichier].yml)
+  - un fichier pour la prod et un second pour la preprod
+3- On commit son projet sur la branch de son choix
+4- On push vers la branch
+  
 ### Buildpacks heroku
 
   - nodejs
