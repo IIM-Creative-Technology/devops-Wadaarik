@@ -1,24 +1,11 @@
-# iim-nicolas-boudier-app-vue
+# Portfolio Nicolas Boudier
 
-## Project setup
-```
-npm install
-```
+Le portfolio utilise Github action puis Heroku.
+Le projet est commit sur 2 branches :
+  - La première sert de commit de pré-prod
+  - La seconde sert de commit de prod
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Détails
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+  - Le projet est développé sous Vuejs.
+  - preprod.yaml est le fichier permettant de push ses commits vers la branche de préprod.
